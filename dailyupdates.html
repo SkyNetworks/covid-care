@@ -1,0 +1,755 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- link file CSS 
+    <link rel="stylesheet" href="css/home.css">
+
+    <link rel="stylesheet" href="helpline.css">
+    -->
+
+    <script src="https://kit.fontawesome.com/996973c893.js" crossorigin="anonymous"></script>
+    <!-- google fonts -->
+    <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+    <title>COVID-19</title>
+</head>
+
+
+<body>
+
+    <!-- navbar start -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Covid-19</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">
+              <i class="fas fa-home"></i>Home
+              <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fas  fa-phone-alt" href="helpline.html">Helpline</a>
+          </li>
+           <!--<li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Test
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#symptosid">sympotms </a>
+              <a class="dropdown-item" href="#seftycovid">Sefty</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Sympotms checker</a>
+            </div>
+          </li> -->
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Daily Updates</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input
+            class="form-control mr-sm-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+            Search
+          </button>
+        </form>
+      </div>
+    </nav>
+     <!-- navbar end -->
+    </div>
+    <div class="container-fluid  bg-light p-5 text-center my-3">
+        <div class="text-center text-muted">
+            <h4>Indian Helpline <i class="far fa-address-book text-primary"></i></h4>
+            <p>Indian government and ministry of health & family<br> welfare has provided the following data of states</p>
+
+            <div class="row pt-3">
+
+            </div>
+
+        </div>
+    </div>
+    <div class="text-center">
+        <table class="table mt-3">
+            <thead class="thead-dark">
+                <tr>
+                      <th scope="col">Date </th>
+
+                </tr>
+                 <tbody>
+          <tr id="date"></tr>
+        </tbody>
+            </thead>
+        </table>
+
+        <h5>Daily Covid-19 updates of every  State </h5>
+    </div>
+    <div class="container-fluid">
+
+        <table class="table mt-3">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">States</th>
+                     <th scope="col">Population </th>
+                    <th scope="col">Conforms</th>
+                    <th scope="col">vaccinated1</th>
+                     <th scope="col">vaccinated2</th>
+                      <th scope="col">recovered</th>
+                       <th scope="col">Tested</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <!--Table Start -->
+                <tr>
+                     <th scope="row"></th>
+                     <thead>
+          <tr>
+              <td> </td>
+               <th scope="col">Population </th>
+            <th scope="col">Conforms</th>
+            <th scope="col">vaccinated1</th>
+            <th scope="col">vaccinated 2</th>
+            <th scope="col">recovered</th>
+            <th scope="col">Tested</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr id="data"></tr>
+        </tbody>
+
+                </tr>
+                <!--table close-->
+                 <!--Table Start -->
+                <tr>
+                     <th scope="row"></th>
+                     <thead>
+          <tr>
+            <td> </td>
+               <th scope="col">Population </th>
+            <th scope="col">Conforms</th>
+            <th scope="col">vaccinated1</th>
+            <th scope="col">vaccinated 2</th>
+            <th scope="col">recovered</th>
+            <th scope="col">Tested</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr id="data2"></tr>
+        </tbody>
+
+                </tr>
+                <!--table close-->
+                 <!--Table Start -->
+                <tr>
+                     <th scope="row"></th>
+                     <thead>
+          <tr>
+              <td> </td>
+               <th scope="col">Population </th>
+            <th scope="col">Conforms</th>
+            <th scope="col">vaccinated1</th>
+            <th scope="col">vaccinated 2</th>
+            <th scope="col">recovered</th>
+            <th scope="col">Tested</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr id="data3"></tr>
+        </tbody>
+
+                </tr>
+                <!--table close-->
+                 <!--Table Start -->
+                <tr>
+                     <th scope="row"></th>
+                     <thead>
+          <tr>
+              <td> </td>
+               <th scope="col">Population</th>
+            <th scope="col">Conforms</th>
+            <th scope="col">vaccinated1</th>
+            <th scope="col">vaccinated 2</th>
+            <th scope="col">recovered</th>
+            <th scope="col">Tested</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr id="data4"></tr>
+        </tbody>
+
+                </tr>
+                <!--table close-->
+                 <!--Table Start -->
+                <tr>
+                     <th scope="row"></th>
+                     <thead>
+          <tr>
+              <td> </td>
+              <th scope="col">Population </th>
+            <th scope="col">Conforms</th>
+            <th scope="col">vaccinated1</th>
+            <th scope="col">vaccinated 2</th>
+            <th scope="col">recovered</th>
+            <th scope="col">Tested</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr id="data5"></tr>
+        </tbody>
+
+                </tr>
+                <!--table close-->
+                 <!--Table Start -->
+                <tr>
+                     <th scope="row"></th>
+                     <thead>
+          <tr>
+             <td> </td>
+              <th scope="col">Population </th>
+            <th scope="col">Conforms</th>
+            <th scope="col">vaccinated1</th>
+            <th scope="col">vaccinated 2</th>
+            <th scope="col">recovered</th>
+            <th scope="col">Tested</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr id="data6"></tr>
+        </tbody>
+
+                </tr>
+                <!--table close-->
+                 <!--Table Start -->
+                <tr>
+                     <th scope="row"></th>
+                     <thead>
+          <tr>
+             <td> </td>
+              <th scope="col">Population </th>
+            <th scope="col">Conforms</th>
+            <th scope="col">vaccinated1</th>
+            <th scope="col">vaccinated 2</th>
+            <th scope="col">recovered</th>
+            <th scope="col">Tested</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr id="data7"></tr>
+        </tbody>
+
+                </tr>
+                <!--table close-->
+                 <!--Table Start -->
+                <tr>
+                     <th scope="row"></th>
+                     <thead>
+          <tr>
+             <td> </td>
+              <th scope="col">Population </th>
+            <th scope="col">Conforms</th>
+            <th scope="col">vaccinated1</th>
+            <th scope="col">vaccinated 2</th>
+            <th scope="col">recovered</th>
+            <th scope="col">Tested</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr id="data8"></tr>
+        </tbody>
+
+                </tr>
+                <!--table close-->
+                 <!--Table Start -->
+                <tr>
+                     <th scope="row"></th>
+                     <thead>
+          <tr>
+             <td> </td>
+              <th scope="col">Population </th>
+            <th scope="col">Conforms</th>
+            <th scope="col">vaccinated1</th>
+            <th scope="col">vaccinated 2</th>
+            <th scope="col">recovered</th>
+            <th scope="col">Tested</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr id="data9"></tr>
+        </tbody>
+
+                </tr>
+                <!--table close-->
+                 <!--Table Start -->
+                <tr>
+                     <th scope="row"></th>
+                     <thead>
+          <tr>
+             <td> </td>
+              <th scope="col">Population </th>
+            <th scope="col">Conforms</th>
+            <th scope="col">vaccinated1</th>
+            <th scope="col">vaccinated 2</th>
+            <th scope="col">recovered</th>
+            <th scope="col">Tested</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr id="data10"></tr>
+        </tbody>
+
+                </tr>
+                <!--table close-->
+                 <!--Table Start -->
+                <tr>
+                     <th scope="row"></th>
+                     <thead>
+          <tr>
+             <td> </td>
+              <th scope="col">Population </th>
+            <th scope="col">Conforms</th>
+            <th scope="col">vaccinated1</th>
+            <th scope="col">vaccinated 2</th>
+            <th scope="col">recovered</th>
+            <th scope="col">Tested</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr id="data11"></tr>
+        </tbody>
+
+                </tr>
+                <!--table close-->
+                 <!--Table Start -->
+                <tr>
+                     <th scope="row"></th>
+                     <thead>
+          <tr>
+             <td> </td>>
+              <th scope="col">Population </th>
+            <th scope="col">Conforms</th>
+            <th scope="col">vaccinated1</th>
+            <th scope="col">vaccinated 2</th>
+            <th scope="col">recovered</th>
+            <th scope="col">Tested</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr id="data12"></tr>
+        </tbody>
+
+                </tr>
+                <!--table close-->
+                 <!--Table Start -->
+                <tr>
+                     <th scope="row"></th>
+                     <thead>
+          <tr>
+              <td> </td>
+              <th scope="col">Population </th>
+            <th scope="col">Conforms</th>
+            <th scope="col">vaccinated1</th>
+            <th scope="col">vaccinated 2</th>
+            <th scope="col">recovered</th>
+            <th scope="col">Tested</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr id="data13"></tr>
+        </tbody>
+
+                </tr>
+                <!--table close-->
+                 <!--Table Start -->
+                <tr>
+                     <th scope="row"></th>
+                     <thead>
+          <tr>
+              <td> </td>
+              <th scope="col">Population </th>
+            <th scope="col">Conforms</th>
+            <th scope="col">vaccinated1</th>
+            <th scope="col">vaccinated 2</th>
+            <th scope="col">recovered</th>
+            <th scope="col">Tested</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr id="data14"></tr>
+        </tbody>
+
+                </tr>
+                <!--table close-->
+                 <!--Table Start -->
+                <tr>
+                     <th scope="row"></th>
+                     <thead>
+          <tr>
+              <td> </td>
+              <th scope="col">Population </th>
+            <th scope="col">Conforms</th>
+            <th scope="col">vaccinated1</th>
+            <th scope="col">vaccinated 2</th>
+            <th scope="col">recovered</th>
+            <th scope="col">Tested</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr id="data15"></tr>
+        </tbody>
+
+                </tr>
+                <!--table close-->
+                 <!--Table Start -->
+                <tr>
+                     <th scope="row"></th>
+                     <thead>
+          <tr>
+              <td> </td>
+              <th scope="col">Population </th>
+            <th scope="col">Conforms</th>
+            <th scope="col">vaccinated1</th>
+            <th scope="col">vaccinated 2</th>
+            <th scope="col">recovered</th>
+            <th scope="col">Tested</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr id="data"></tr>
+        </tbody>
+
+                </tr>
+                <!--table close-->
+                 <!--Table Start -->
+                <tr>
+                     <th scope="row"></th>
+                     <thead>
+          <tr>
+              <td> </td>
+              <th scope="col">Population </th>
+            <th scope="col">Conforms</th>
+            <th scope="col">vaccinated1</th>
+            <th scope="col">vaccinated 2</th>
+            <th scope="col">recovered</th>
+            <th scope="col">Tested</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr id="data16"></tr>
+        </tbody>
+
+                </tr>
+                <!--table close-->
+                 <!--Table Start -->
+                <tr>
+                     <th scope="row"></th>
+                     <thead>
+          <tr>
+              <td> </td>
+              <th scope="col">Population </th>
+            <th scope="col">Conforms</th>
+            <th scope="col">vaccinated1</th>
+            <th scope="col">vaccinated 2</th>
+            <th scope="col">recovered</th>
+            <th scope="col">Tested</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr id="data17"></tr>
+        </tbody>
+
+                </tr>
+                <!--table close-->
+                 <!--Table Start -->
+                <tr>
+                     <th scope="row"></th>
+                     <thead>
+          <tr>
+              <td> </td>
+              <th scope="col">Population </th>
+            <th scope="col">Conforms</th>
+            <th scope="col">vaccinated1</th>
+            <th scope="col">vaccinated 2</th>
+            <th scope="col">recovered</th>
+            <th scope="col">Tested</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr id="data18"></tr>
+        </tbody>
+
+                </tr>
+                <!--table close-->
+                 <!--Table Start -->
+                <tr>
+                     <th scope="row"></th>
+                     <thead>
+          <tr>
+              <td> </td>
+              <th scope="col">Population </th>
+            <th scope="col">Conforms</th>
+            <th scope="col">vaccinated1</th>
+            <th scope="col">vaccinated 2</th>
+            <th scope="col">recovered</th>
+            <th scope="col">Tested</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr id="data19"></tr>
+        </tbody>
+
+                </tr>
+                <!--table close-->
+                 <!--Table Start -->
+                <tr>
+                     <th scope="row"></th>
+                     <thead>
+          <tr>
+              <td> </td>
+              <th scope="col">Population </th>
+            <th scope="col">Conforms</th>
+            <th scope="col">vaccinated1</th>
+            <th scope="col">vaccinated 2</th>
+            <th scope="col">recovered</th>
+            <th scope="col">Tested</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr id="data20"></tr>
+        </tbody>
+
+                </tr>
+                <!--table close-->
+                 <!--Table Start -->
+                <tr>
+                     <th scope="row"></th>
+                     <thead>
+          <tr>
+              <td> </td>
+              <th scope="col">Population </th>
+            <th scope="col">Conforms</th>
+            <th scope="col">vaccinated1</th>
+            <th scope="col">vaccinated 2</th>
+            <th scope="col">recovered</th>
+            <th scope="col">Tested</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr id="data21"></tr>
+        </tbody>
+
+                </tr>
+                <!--table close-->
+                 <!--Table Start -->
+                <tr>
+                     <th scope="row"></th>
+                     <thead>
+          <tr>
+              <td> </td>
+              <th scope="col">Population </th>
+            <th scope="col">Conforms</th>
+            <th scope="col">vaccinated1</th>
+            <th scope="col">vaccinated 2</th>
+            <th scope="col">recovered</th>
+            <th scope="col">Tested</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr id="data22"></tr>
+        </tbody>
+
+                </tr>
+                <!--table close-->
+                 <!--Table Start -->
+                <tr>
+                     <th scope="row"></th>
+                     <thead>
+          <tr>
+              <td> </td>
+              <th scope="col">Population </th>
+            <th scope="col">Conforms</th>
+            <th scope="col">vaccinated1</th>
+            <th scope="col">vaccinated 2</th>
+            <th scope="col">recovered</th>
+            <th scope="col">Tested</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr id="data23"></tr>
+        </tbody>
+
+                </tr>
+                <!--table close-->
+                 <!--Table Start -->
+                <tr>
+                     <th scope="row"></th>
+                     <thead>
+          <tr>
+              <td> </td>
+              <th scope="col">Population </th>
+            <th scope="col">Conforms</th>
+            <th scope="col">vaccinated1</th>
+            <th scope="col">vaccinated 2</th>
+            <th scope="col">recovered</th>
+            <th scope="col">Tested</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr id="data24"></tr>
+        </tbody>
+
+                </tr>
+                <!--table close-->
+                 <!--Table Start -->
+                <tr>
+                     <th scope="row"></th>
+                     <thead>
+          <tr>
+              <td> </td>
+              <th scope="col">Population </th>
+            <th scope="col">Conforms</th>
+            <th scope="col">vaccinated1</th>
+            <th scope="col">vaccinated 2</th>
+            <th scope="col">recovered</th>
+            <th scope="col">Tested</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr id="data25"></tr>
+        </tbody>
+
+                </tr>
+                <!--table close-->
+                 <!--Table Start -->
+                <tr>
+                     <th scope="row"></th>
+                     <thead>
+          <tr>
+              <td> </td>
+              <th scope="col">Population </th>
+            <th scope="col">Conforms</th>
+            <th scope="col">vaccinated1</th>
+            <th scope="col">vaccinated 2</th>
+            <th scope="col">recovered</th>
+            <th scope="col">Tested</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr id="data26"></tr>
+        </tbody>
+
+                </tr>
+                <!--table close-->
+                 <!--Table Start -->
+                <tr>
+                     <th scope="row"></th>
+                     <thead>
+          <tr>
+              <td> </td>
+              <th scope="col">Population </th>
+            <th scope="col">Conforms</th>
+            <th scope="col">vaccinated1</th>
+            <th scope="col">vaccinated 2</th>
+            <th scope="col">recovered</th>
+            <th scope="col">Tested</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr id="data27"></tr>
+        </tbody>
+
+                </tr>
+                <!--table close-->
+
+          <!--Table Start -->
+                <tr>
+                     <th scope="row"></th>
+                     <thead>
+          <tr>
+              <td> </td>
+              <th scope="col">Population </th>
+            <th scope="col">Conforms</th>
+            <th scope="col">vaccinated1</th>
+            <th scope="col">vaccinated 2</th>
+            <th scope="col">recovered</th>
+            <th scope="col">Tested</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr id="data28"></tr>
+        </tbody>
+
+                </tr>
+        </table>
+
+
+
+        
+    </div>
+
+  <!-- footer start-->
+  <div>
+ <div class="footer-basic">
+        <footer>
+            <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="index.html">Home</a></li>
+                <li class="list-inline-item"><a href="dailyupdates.html">Daily Updates</a></li>
+                <li class="list-inline-item"><a href="#">About</a></li>
+                <li class="list-inline-item"><a href="helpline.html">Helpline</a></li>
+                <li class="list-inline-item"><a href="symptoms.html">Symptoms checker</a></li>
+            </ul>
+            <p class="copyright">Skynetwork © 2021</p>
+        </footer>
+    </div>
+    </div>
+  <!-- footer end -->
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+   
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+<script src="dailyupdates.js">  
+</script> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+   
+  </script>
+
+</html>

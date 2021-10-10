@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>COVID-19</title>
+    <!-- Bootstrap CSS -->
+    <script
+      src="https://kit.fontawesome.com/996973c893.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="symptom.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"
+    />
+  </head>
+  <body onload="NextQuestion(0)">
+    <!-- navbar start -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#" fas fa-virus>Covid-19</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">
+              <i class="fas fa-home"></i>Home
+              <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fas fa-phone-alt" href="helpline.html"
+              >Helpline</a
+            >
+          </li>
+          <!--<li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Test
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#symptosid">sympotms </a>
+              <a class="dropdown-item" href="#seftycovid">Sefty</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Sympotms checker</a>
+            </div>
+          </li>-->
+          <li class="nav-item">
+            <a class="nav-link fab fa-bluetooth" href="dailyupdates.html">Daily Updates</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input
+            class="form-control mr-sm-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+            Search
+          </button>
+        </form>
+      </div>
+    </nav>
+    <div>
+       <div class="alert alert-primary " role="alert">
+   here are some questions about corona virus please fill in your symptoms accordingly   
+</div>
+
+    </div>
+    <br>
+  </br>
+    <!-- navbar end -->
+
+    <!-- QUIZ CONTAINER -->
+    <main>
+      <!-- creating a modal for when quiz ends -->
+      <div class="modal-container mt-4" id="score-modal">
+        <div class="modal-content-container">
+          <h1>Complete Symptom checker.</h1>
+
+          <div class="grade-details">
+            <p>Attempts : 10</p>
+            <p>No  : <span id="wrong-answers"></span></p>
+            <p>Yes : <span id="right-answers"></span></p>
+            <p>Present : <span id="grade-percentage"></span>%</p>
+            <p><span id="remarks"></span></p>
+          </div>
+
+          <div class="modal-button-container">
+            <button onclick="closeScoreModal()">Continue</button>
+          </div>
+        </div>
+      </div>
+      <!-- end of modal of quiz details-->
+
+      <div class="game-quiz-container">
+        <div class="game-details-container">
+          <h1>  <span id="player-score"></span> / 10</h1>
+
+          <h1>Question : <span id="question-number"></span> / 10</h1>
+        </div>
+
+        <div class="game-question-container">
+          <h1 id="display-question"></h1>
+        </div>
+
+        <div class="game-options-container">
+          <div class="modal-container" id="option-modal">
+            <div class="modal-content-container">
+              <h1>Please Pick An Option</h1>
+
+              <div class="modal-button-container">
+                <button onclick="closeOptionModal()">Continue</button>
+              </div>
+            </div>
+          </div>
+
+          <span>
+            <input
+              type="radio"
+              id="option-one"
+              name="option"
+              class="radio"
+              value="optionA"
+            />
+            <label
+              for="option-one"
+              class="option"
+              id="option-one-label"
+            ></label>
+          </span>
+
+          <span>
+            <input
+              type="radio"
+              id="option-two"
+              name="option"
+              class="radio"
+              value="optionB"
+            />
+            <label
+              for="option-two"
+              class="option"
+              id="option-two-label"
+            ></label>
+          </span>
+
+          <span>
+            <input
+              type="radio"
+              id="option-three"
+              name="option"
+              class="radio"
+              value="optionC"
+            />
+            <label
+              for="option-three"
+              class="option"
+              id="option-three-label"
+            ></label>
+          </span>
+
+          <span>
+            <input
+              type="radio"
+              id="option-four"
+              name="option"
+              class="radio"
+              value="optionD"
+            />
+            <label
+              for="option-four"
+              class="option"
+              id="option-four-label"
+            ></label>
+          </span>
+        </div>
+
+        <div class="next-button-container">
+          <button onclick="handleNextQuestion()">Next Question</button>
+        </div>
+      </div>
+    </main>
+
+    <script src="symptom.js"></script>
+
+    <script
+      type="text/javascript"
+      src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"
+    ></script>
+    <script type="text/javascript" src="questions.json"></script>
+    <script type="text/javascript" src="symptom.js"></script>
+    <!-- footer start-->
+  <div>
+ <div class="footer-basic">
+        <footer>
+            <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="index.html">Home</a></li>
+                <li class="list-inline-item"><a href="dailyupdates.html">Daily Updates</a></li>
+                <li class="list-inline-item"><a href="#">About</a></li>
+                <li class="list-inline-item"><a href="helpline.html">Helpline</a></li>
+                <li class="list-inline-item"><a href="symptoms.html">Symptoms checker</a></li>
+            </ul>
+            <p class="copyright">Skynetwork © 2021</p>
+        </footer>
+    </div>
+    </div>
+  <!-- footer end -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="symptom.js"></script>
+
+    <script></script>
+  </body>
+</html>
